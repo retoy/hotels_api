@@ -4,7 +4,6 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Positive;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -14,9 +13,8 @@ import lombok.NoArgsConstructor;
 public class Address {
 
     @NotNull(message = "House number is required")
-    @Positive(message = "House number must be positive")
     @Column(name = "house_number", nullable = false)
-    private Integer houseNumber;
+    private String houseNumber;
 
     @NotBlank(message = "Street is required")
     @Column(name = "street", nullable = false)

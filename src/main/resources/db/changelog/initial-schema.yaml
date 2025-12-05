@@ -25,11 +25,11 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: description
-                  type: CLOB
+                  type: TEXT
 
               - column:
                   name: house_number
-                  type: INT
+                  type: VARCHAR(255)
                   constraints:
                     nullable: false
               - column:

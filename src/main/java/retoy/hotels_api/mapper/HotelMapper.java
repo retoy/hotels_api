@@ -44,7 +44,7 @@ public class HotelMapper {
 
     private String formatAddress(Hotel hotel) {
         if (hotel.getAddress() == null) return null;
-        return String.format("%d %s, %s, %s, %s",
+        return String.format("%s %s, %s, %s, %s",
                 hotel.getAddress().getHouseNumber(),
                 hotel.getAddress().getStreet(),
                 hotel.getAddress().getCity(),
