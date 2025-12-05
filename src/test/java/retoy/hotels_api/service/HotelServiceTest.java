@@ -33,7 +33,7 @@ class HotelServiceTest {
     @BeforeEach
     void setUp() {
          testAddress = new Address();
-        testAddress.setHouseNumber(9);
+        testAddress.setHouseNumber("9");
         testAddress.setStreet("Pobediteley Avenue");
         testAddress.setCity("Minsk");
         testAddress.setCountry("Belarus");
